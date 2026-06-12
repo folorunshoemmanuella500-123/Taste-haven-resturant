@@ -1,0 +1,362 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} 
+
+
+/*Body*/
+body {
+  width: 100%;
+  background: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  padding: 20px 5%; 
+  align-items: center;
+  flex-wrap: wrap;
+} 
+
+.container{
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+} 
+
+.nav-bar{
+  background: #333;
+  margin: auto;
+}
+
+
+.logo{
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.nav-links{
+  margin: 10px 17px;
+  display:flex;
+  gap: 25px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+  
+.nav-links a{
+  display: flex;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 10px;
+  background: transparent;
+  text-decoration: none;
+}
+  
+.nav-links a:hover{
+  background: #e67e22;
+  cursor: pointer;
+}
+
+.hero{
+  text-align:  center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6),  rgba(0, 0, 0, 0.6)), url("log.jpg");
+  color: #fff;
+}
+.hero h1{
+  margin-bottom: 20px;
+  font-size: 80px;
+}
+
+.hero p{
+  font-size: 30px;
+}
+
+.nav p{
+  font-size: 50px;
+}
+
+.btn{
+  background: #e67e22;
+  color: #fff;
+  font-size: 30px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 12px 20px;
+  margin-bottom: 80px;
+}
+
+ .btn:hover{
+   background: #222;
+   color: #000;
+ }
+
+.card-container{
+  padding: 10px 5%;
+  margin-bottom: 80px;
+}
+
+.card-container h2{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.card-features{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.card{
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0,0.1);
+}
+
+.card-image {
+  height: 200px;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.card-items{
+  display: grid;
+  text-align:center;
+  background: #fff;
+  justify-content: space-evenly;
+  
+ 
+}
+.card h3{
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.card p{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.t{
+  color: #e67e22;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.about{
+  padding: 20px 5%;
+  text-align: center;
+}
+
+.about h2{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.about p{
+  padding: 30px 20px;
+  font-size: 30px;
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0,0.1);
+}
+
+.testimony{
+  padding: 20px 5%;
+  text-align: center;
+}
+
+.testimony h2{
+  margin-top: 20px;
+  font-size: 50px;
+}
+
+.testimony-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  margin-bottom: 80px;
+ }
+ 
+ .items{
+  border: none;
+  border-radius: 50px;
+  background: #f9f9f9;
+  padding: 30px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0,0.1);
+}
+
+.testimony h3{
+  text-align: center;
+  font-size: 30px;
+  
+}
+
+.testimony p{
+  text-align: center;
+  font-size: 30px;
+}
+
+.hours{
+  padding: 20px 5%;
+}
+.hours h2{
+  font-size: 50px;
+  
+}
+
+
+ table{
+   height: 20px;
+   width: 100%;
+   border-collapse: collapse;
+   margin-bottom: 80px;
+ }
+
+.td{
+  background: #f9f9f9;
+  border: none;
+  border-radius: 5px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0,0.1);
+}
+
+.b{
+  background: lightgray;
+}
+
+.days{
+  background: #e67e22;
+  color: #fff;
+  font-weight: bold;
+}
+
+.reservation{
+  padding: 20px 5%;
+  max-width: 1200px;
+  width: 90%;
+}
+
+.reservation h2{
+  font-size: 50px;
+  padding: 20px 5%;
+}
+
+.reservation-detail{
+  display: grid;
+  gap: 25px;
+  margin: 20px;
+}
+
+ form{
+   background: #f9f9f9;
+   display: grid;
+   grid-template-columns: 1fr;
+   margin-bottom: 80px;
+   box-shadow: 0 4px 8px( rgba(0, 0, 0, 0.1));
+     
+   
+ }
+.details{
+/*  margin: 20px;*/
+  border: none;
+  border-radius: 5px; 
+}
+
+.details input{
+  /*box-sizing: border-box;*/
+  border-radius: 5px ;
+  border: 1px solid #000;
+}
+
+.button{
+  color:#fff;
+  background: #e67e22;
+  font-size:20px;
+  text-align: center;
+} 
+
+  
+.footer{
+  background: #333;
+  color: #fff;
+/*  padding: 20px 5px; */
+  
+}
+
+.footer-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+}
+
+.footer h4{
+  color: #e67e22;
+  margin-bottom: 20px;
+}
+
+.copyright{
+  padding: 20px 5%;
+  text-align: center;
+}
+
+
+
+@media (max-width: 768px){ 
+      .card-features{
+        grid-template-columns: 1fr;
+      }
+      
+      .card h2{
+        font-size: 30px;
+      }
+      
+      .about h2{
+        font-size: 30px;
+      }
+      
+      .hours h2{
+        font-size: 30px;
+      }
+      
+      .reservation h2{
+        font-size: 30px;
+      }
+      
+      .nav-links {
+        flex-direction: column;
+        text-align: center;
+        width:100%;
+      }
+    
+      
+      .hero h2{
+         font-size: 30px;
+      }
+      
+      .hero h1{
+        font-size: 40px;
+      }
+      
+     .testimony-container{
+         grid-template-columns: 1fr;
+         
+      }
+      
+      .footer-grid{
+         grid-template-columns: 1fr;
+      }
+ }    
